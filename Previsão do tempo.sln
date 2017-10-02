@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Previsão do tempo", "Previsão do tempo\Previsão do tempo.csproj", "{68C5E1A9-E991-43B0-B3CD-E699C46D1ABD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68C5E1A9-E991-43B0-B3CD-E699C46D1ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68C5E1A9-E991-43B0-B3CD-E699C46D1ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68C5E1A9-E991-43B0-B3CD-E699C46D1ABD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{68C5E1A9-E991-43B0-B3CD-E699C46D1ABD}.Debug|x86.Build.0 = Debug|Any CPU
+		{68C5E1A9-E991-43B0-B3CD-E699C46D1ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68C5E1A9-E991-43B0-B3CD-E699C46D1ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68C5E1A9-E991-43B0-B3CD-E699C46D1ABD}.Release|x86.ActiveCfg = Release|Any CPU
+		{68C5E1A9-E991-43B0-B3CD-E699C46D1ABD}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B54A3229-1D9E-423C-8A6F-87621062E607}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,57 @@
+﻿<Window x:Class="Previsão_do_tempo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Previsão_do_tempo"
+        mc:Ignorable="d"
+        Title="Previsão do tempo" Height="465" Width="673" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" MaxWidth="675" MaxHeight="465">
+    <Grid Background="#FF1B127C">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image x:Name="ImageFundo" Source="Img/fundo.jpg" Stretch="Fill"/>
+        <Grid>
+            <Grid.Background>
+                <SolidColorBrush Color="Black" Opacity="0.4"/>
+            </Grid.Background>
+        </Grid>
+
+        <GroupBox Header="Previsão 4 dias" Margin="10,16,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="284" Width="635" Foreground="White" FontWeight="Bold">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.Background>
+                    <SolidColorBrush Color="#FF101011" Opacity="0.5"/>
+                </Grid.Background>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="LblDia1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="330" Background="White" Height="30" VerticalContentAlignment="Center"/>
+                <Label x:Name="LblDia2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,72,0,0" Width="330" Background="White" Height="30" VerticalContentAlignment="Center"/>
+                <Label x:Name="LblDia3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,138,0,0" Width="330" Background="White" Height="30" VerticalContentAlignment="Center"/>
+                <Label x:Name="LblDia4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,204,0,0" Width="330" Background="White" Height="30" VerticalContentAlignment="Center"/>
+                <Label x:Name="LblTituloCidade" Content="Brasil" HorizontalAlignment="Left" Margin="349,0,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="24" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="274"/>
+                <Label x:Name="LblInfo" Content="inFo" Margin="349,42,0,0" VerticalAlignment="Top" Foreground="White" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="264" Height="60"/>
+                <Image x:Name="ImageTempo" HorizontalAlignment="Right" Height="145" Margin="0,107,10,0" VerticalAlignment="Top" Width="264"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Pesquisar Locais" HorizontalAlignment="Left" Height="104" Margin="10,313,0,0" VerticalAlignment="Top" Width="635" Foreground="White" FontWeight="Bold">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.Background>
+                    <SolidColorBrush Color="#FF101011" Opacity="0.4"/>
+                </Grid.Background>
+                <TextBox x:Name="TxtCidade" Height="30" Margin="90,40,0,0" TextWrapping="Wrap" Width="164" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+                <Button x:Name="BtnBuscar" Content="Buscar" Width="75" Margin="270,40,0,0" Click="BtnBuscar_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" FontWeight="Bold"/>
+                <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Margin="368,40,0,0" VerticalAlignment="Top" Width="153" SelectionChanged="ComboBox1_SelectionChanged" Height="30" FontWeight="Normal" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label Content="Nome da cidade:" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="164" Foreground="White" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label Content="Selecionar cidade" HorizontalAlignment="Left" Margin="370,10,0,0" VerticalAlignment="Top" Width="151" Foreground="White" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
